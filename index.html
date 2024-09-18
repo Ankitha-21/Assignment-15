@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border-radius: 40px;
+            width: 40vw;
+            margin-left: 400px;
+            margin-top: 100px;
+            height: 65vh;
+            display: grid;
+            padding: 10px;
+            gap: 3px;
+            background-image: repeating-radial-gradient(violet,indigo,blue,green,yellow,orange,red);
+            grid-template-areas: 
+            "area1 area2 area3"
+            "area1 area4 area5"
+            "area6 area4 area7";
+        }
+        .item{
+            padding: 20px;
+        }
+        .p1{
+            background-image: url(./assests/images/rk1.jpg);
+            background-size: cover;
+            grid-area: area1;
+        }
+        .p2{
+            background-image: url(./assests/images/rk2.jpg);
+            background-size: cover;
+            grid-area: area2;
+        }
+        .p3{
+            background-image: url(./assests/images/rk4.webp);
+            background-size: cover;
+            grid-area: area3;
+        }
+        .p4{
+            background-image: url(./assests/images/rk8.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+            grid-area: area4;
+        }
+        .p5{
+            background-image: url(./assests/images/rk6.jpg);
+            background-size: 175px;
+            background-repeat: no-repeat;
+            grid-area: area5;
+        }
+        .p6{
+            background-image: url(./assests/images/rk7.jpg);
+            background-size: cover;
+            grid-area: area6;
+        }
+        .p7{
+            background-image: url(./assests/images/rk5.webp);
+            background-size: cover;
+            grid-area: area7;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item p1"></div>
+        <div class="item p2"></div>
+        <div class="item p3"></div>
+        <div class="item p4"></div>
+        <div class="item p5"></div>
+        <div class="item p6"></div>
+        <div class="item p7"></div>
+    </div>
+</body>
+</html>
